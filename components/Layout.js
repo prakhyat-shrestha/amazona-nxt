@@ -18,6 +18,9 @@ export default function Layout({ title, description, children }) {
         <title>{title ? `${title} - Next Amazona` : 'Next Amazona'}</title>
         {description && <meta name="description" content={description}></meta>}
         {title && <meta property="og:title" content={title} key="ogtitle" />}
+        {previewImage && (
+          <meta property="og:image" content={previewImage} key="ogimage" />
+        )}
       </Head>
       <AppBar position="static" className={classes.navbar}>
         <Toolbar>
