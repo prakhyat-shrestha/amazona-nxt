@@ -17,10 +17,16 @@ export default function Layout({ title, description, children }) {
       <Head>
         <title>{title ? `${title} - Next Amazona` : 'Next Amazona'}</title>
         {description && <meta name="description" content={description}></meta>}
-        {title && <meta property="og:title" content={title} key="ogtitle" />}
-        {previewImage && (
-          <meta property="og:image" content={previewImage} key="ogimage" />
-        )}
+        <meta property="og:title" content="The Rock" />
+        <meta property="og:type" content="video.movie" />
+        <meta
+          property="og:url"
+          content="https://www.imdb.com/title/tt0117500/"
+        />
+        <meta
+          property="og:image"
+          content="https://ia.media-imdb.com/images/rock.jpg"
+        />
       </Head>
       <AppBar position="static" className={classes.navbar}>
         <Toolbar>
