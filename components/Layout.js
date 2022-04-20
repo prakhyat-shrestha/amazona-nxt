@@ -18,7 +18,7 @@ export default function Layout({ title, description, children }) {
         <title>{title ? `${title} - Next Amazona` : 'Next Amazona'}</title>
         {description && <meta name="description" content={description}></meta>}
         <meta property="og:title" content="The Rock" />
-        <meta property="og:type" content="video.movie" />
+        <meta property="og:type" content="website" />
         <meta property="og:url" content="https://fnteach.com" />
         <meta property="og:image" content="https://fnteach.com/og-image.png" />
       </Head>
